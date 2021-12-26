@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' conten='width=device-width, initial scale=1.0'>
+    <meta http-equiv='U-XA-Compatible' content='IE-edge'>
+    <title>Acendendo a Lâmpada</title>
+
+    <link rel="shortcut icon" href="/Botões de Navegação/Sem Restauração/imagens/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Acendendo a Lâmpada</h1>
+    <div id='imagem'>
+        <img id='lampada' src="imagens/lampada-apagada.jpg" alt="">
+
+        <div id='botao'>
+            <input type="button" value='Acender' onclick='acender()'>
+            <input type="button" value="Apagar" onclick='apagar()'>
+            <input type="button" value="Quebrar" onclick='quebrar()'>
+        </div>
+    </div>
+
+    <script>
+        function acender() {
+            document.getElementById('lampada').src='imagens/lampada-acesa.jpg'
+        }
+        function apagar() {
+            document.getElementById('lampada').src='imagens/lampada-apagada.jpg'
+        }
+        function quebrar() {
+            document.getElementById('lampada').src='imagens/lampada-quebrada.jpg'
+        }
+    </script>
+</body>
+</html>
